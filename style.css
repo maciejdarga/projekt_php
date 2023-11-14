@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+
+
+section {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.login-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    z-index: 2;
+}
+
+.login-bar.open {
+    transform: translateY(0);
+}
+
+.login-bar h2 {
+    margin-top: 0;
+}
+
+.login-bar form {
+    margin-bottom: 20px;
+}
+
+.login-bar input[type="text"],
+.login-bar input[type="password"],
+.login-bar input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-bar input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-bar p {
+    margin: 0 0 10px;
+}
+
+.login-bar .error {
+    color: red;
+}
+
+.login-dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.nav-login:hover .login-dropdown {
+    display: block;
+}
+
